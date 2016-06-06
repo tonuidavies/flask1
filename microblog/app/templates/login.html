@@ -1,0 +1,30 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="static/foundation.css">
+    <link rel="stylesheet" href="static/app.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+          <h1>Please Login</h1><br>
+          <form action="" method="post">
+              <input type="text" placeholder="username" name="username" value="{{request.form.username}}">
+        <input type="password" placeholder="password" name="password" value="{{request.form.password}}">
+              <input type="button" type="Submit" value="Login">
+          </form>
+        {%if error %}
+          <p class="error"><strong>Error:{{error}}</strong></p>
+          {% endif %}
+    </div>
+
+    <script src="static/vendor/jquery.js"></script>
+    <script src="static/vendor/what-input.js"></script>
+    <script src="static/vendor/foundation.js"></script>
+    <script src="static/app.js"></script>
+  </body>
+</html>
