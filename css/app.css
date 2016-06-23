@@ -82,8 +82,8 @@ li {
 }
 
 .header {
-    text-align: center;
-    align-content: center;
+    text-align: left;
+    align-content: left;
 }
 * {
   -moz-box-sizing: border-box;
